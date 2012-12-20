@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bootstrap</title>
+	<title>Playing With Bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
     
@@ -16,7 +16,7 @@
 <div class="navbar">
 <!--<div class="navbar navbar-inverse navbar-fixed-top">-->
 	<div class="navbar-inner">
-		<a href="#" class="brand">My Awesome Website</a>
+		<a href="#" class="brand">Play Time</a>
 		<ul class="nav">
 			<li class="active"><a href="#">Home</a></li>            
             <li class="dropdown">
@@ -47,30 +47,142 @@
   <li class="active"><a href="#">Home</a> <span class="divider">/</span></li>
 </ul>
 
-<div class="row">
+<div class="container">
+    <div class="row">
+        <div class="span10 offset1">
+            <div class="alert alert-info">
+            	<button type="button" class="close" data-dismiss="alert">&times;</button>
+                Attention: You are amazing!
+            </div>
+        </div>
+    </div>
 
-<div class="container-fluid">
-	<div class="row-fluid">
+	<div class="row">
 		<div class="span3">
-		<div class="well">
-		<ul class="nav nav-list">
-			<li class="nav-header">Sidebar</li>
-			<li>item</li>
-			<li>item</li>
-			<li>item</li>
-			<li>item</li>
-			<li class="nav-header">Sidebar</li>
-			<li>item</li>
-			<li>item</li>
-			<li>item</li>
-			<li>item</li>
-		</ul>
-		</div>
+            <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Sidebar</li>
+                    <li class="muted">item</li>
+                    <li class="text-warning">item</li>
+                    <li class="text-error">item</li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Sidebar</li>
+                    <li class="text-info">item</li>
+                    <li class="text-success">item</li>
+                </ul>
+            </div> <!-- end .well -->
+        </div> <!-- end .span3 -->
+   
 		<div class="span9">
-			right col
-		</div>
-	</div>
-</div>
+        	<div class="row">
+            	<div class="span5">
+					<h2>Hawaii 2011</h2>
+            	</div> <!-- end .span8 -->
+            </div> <!-- end .row -->
+            
+            <div class="row">
+            	<div class="span5">
+                    <div class="tabbable"> <!-- Only required for left/right tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab">Banner 1</a></li>
+                            <li><a href="#tab2" data-toggle="tab">Banner 2</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                            	<div class="well well-large">
+                                	<img src="img/10.jpg" class="img-polaroid" />
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <div class="well">
+                                	<img src="img/8.jpg" class="img-polaroid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            	</div> <!-- end .span8 -->
+            </div> <!-- end .row -->
+		</div> <!-- end .span9 -->
+	</div> <!-- end .row-fluid -->
+
+    <br />
+    
+    <ul class="thumbnails">
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="img/1.jpg" class="img-rounded" />
+                <h3>Flower</h3>
+                <p>This is a flower...</p>
+                <i class="icon-user"></i>
+                <i class="icon-heart"></i>
+                <i class="icon-music"></i>
+                <i class="icon-user"></i>
+                <i class="icon-heart"></i>
+                <i class="icon-music"></i>
+                <i class="icon-user"></i>
+                <i class="icon-heart"></i>
+                <i class="icon-music"></i>
+                <i class="icon-user"></i>
+                <i class="icon-heart"></i>
+                <i class="icon-music"></i>
+                <i class="icon-user"></i>
+                <i class="icon-heart"></i>
+            </div>
+        </li>
+        
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="img/2.jpg" class="img-circle" />
+                <h3>Beach</h3>
+                <p>This is a beach...</p>
+                <div class="btn btn-primary btn-mini">
+                	Mini
+                </div>
+                <div class="btn btn-danger btn-small">
+                	Small
+                </div>
+                <div class="btn btn-warning">
+                	Default
+                </div>
+            </div>
+        </li>
+        
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="img/3.jpg" class="img-circle" />
+                <h3>Water</h3>
+                <p>This is water...</p>
+                <div class="progress progress-warning">
+                	<div class="bar" style="width: 45%;"></div>
+                </div>
+                <div class="progress progress-striped progress-danger active">
+                	<div class="bar" style="width: 80%;"></div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="img/4.jpg" class="img-rounded" />
+                <h3>Turtle</h3>
+                <p>This is a turtle...</p>
+                <div class="btn-group">
+                    <button class="btn btn-inverse btn-large">Large</button>
+                    <button class="btn btn-inverse btn-large dropdown-toggle" data-toggle="dropdown">
+                    	<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>What</li>
+                        <li>Should</li>
+                        <li>I...</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+</div> <!-- end .container-fluid -->
 
 <script>
 	$(function(){
