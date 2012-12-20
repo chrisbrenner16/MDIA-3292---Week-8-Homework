@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
     
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js">
+    <script src="js/bootstrap.min.js"></script>
 	
 </head>
 <body>
@@ -17,12 +18,36 @@
 	<div class="navbar-inner">
 		<a href="#" class="brand">My Awesome Website</a>
 		<ul class="nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
+			<li class="active"><a href="#">Home</a></li>            
+            <li class="dropdown">
+            	<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">Web Development<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="http://twitter.github.com/bootstrap/index.html">Twitter Bootstrap</a></li>
+                <li><a href="http://tympanus.net/codrops/">Codrops</a></li>
+                <li><a href="http://www.lynda.com">Lynda</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+            	<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">Social Media<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="http://www.facebook.com">Facebook</a></li>
+                <li><a href="http://www.twitter.com">Twitter</a></li>
+                <li><a href="http://ca.linkedin.com">LinkedIn</a></li>
+                <li class="divider"></li>
+                <li><a href="http://mashable.com">Mashable</a></li>
+                <li><a href="http://www.smashingmagazine.com">Smashing Magazine</a></li>
+              </ul>
+            </li>
 		</ul>
-	</div>
-</div>
+	</div> <!-- end .navbar -->
+</div> <!-- end .navbar -->
+
+<ul class="breadcrumb">
+  <li class="active"><a href="#">Home</a> <span class="divider">/</span></li>
+</ul>
+
+<div class="row">
 
 <div class="container-fluid">
 	<div class="row-fluid">
@@ -46,6 +71,12 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(function(){
+		$('.dropdown-toggle').dropdown();
+	});
+</script>
 
 </body>
 </html>
